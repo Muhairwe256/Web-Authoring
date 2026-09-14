@@ -1,0 +1,23 @@
+h1{color: #174f8a;}
+body{background-color: rgb(250, 250, 250); font-family: Arial, sans-serif; margin: 0; padding: 200px;}
+nav{height: 40px;
+  background-color: #174f8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  color: hsl(0, 0%, 100%);
+}
+a{color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  margin: 0 15px;
+  background-color: #174f8a;
+}
+span{color: hsl(241, 60%, 38%);
+  text-decoration: none;
+  margin: 0 15px;
+}
+li{list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
