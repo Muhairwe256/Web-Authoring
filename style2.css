@@ -21,9 +21,10 @@ span{color: hsl(241, 60%, 38%);
   text-decoration: none;
   margin: 0 15px;
 }
-li{list-style-type: none;
+li{list-style-type: circle;
   display: inline-block;
   margin: 0 15px;
+  block-size: 50px;
 }
 .logo-box img{
   height: 120px;
