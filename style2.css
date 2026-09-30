@@ -22,9 +22,9 @@ span{color: hsl(241, 60%, 38%);
   margin: 0 15px;
 }
 li{list-style-type: circle;
-  display: inline-block;
+  display: display-box;
   margin: 0 15px;
-  block-size: 50px;
+  block-size: 22px;
 }
 .logo-box img{
   height: 120px;
@@ -33,9 +33,9 @@ li{list-style-type: circle;
 }
 
 * {
-  box-sizing: content-box;
-  margin: 1%;
-  padding: 1%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 .university-name p{
   font-size: 20px;
@@ -54,13 +54,57 @@ li{list-style-type: circle;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 14px;
+  padding: 14px;}
 
-    .grid-container {
+  .grid-container {
     min-height: 105px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
-  padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 14px;
   }
+
+.info-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+}
+.about{flex: 1;}
+.programs{flex: 1;}
+.about h2,
+.programs h2{
+  background: #174f8a;
+color: #fff;
+text-align: center;
+padding: 8px;
+margin: 0;
+font-size: 16px;
+}
+.about h3{color: #174f8a;}
+.about,
+.programs{background: #dce6f2;
+}
+.about > *:not(h2),
+.programs ul {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.programs li{font-weight: bold;}
+@media (max-width:600px){
+  .info-row{flex-direction: column;}
+}
+footer{
+  background-color: #174f8a;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  margin-top: 30px;
+  border-radius: 5px;
+
+}
+footer p{
+  color: #fff;
+  font-size: 14px;
+}
